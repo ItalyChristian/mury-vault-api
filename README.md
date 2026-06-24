@@ -10,6 +10,9 @@ API para um site de descobertas de música - Projeto feito com as instruções d
 ### Para rodar o projeto: 
 `npm run dev`
 
+### E é assim que fica o projeto: 
+https://github.com/user-attachments/assets/d7a47f46-0974-4505-ac66-32ecc1616cf0
+
 ### Nota: 
 Este é um projeto fictício criado exclusivamente para fins de estudo e portfólio.
 
