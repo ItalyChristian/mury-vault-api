@@ -8,6 +8,6 @@ export const Discovery = {
         return data.filter(item => item.type === type);
     }, 
     getByName: (name: string): DiscoveryType[] => {
-        return data.filter(item => item.name.toLowerCase().indexOf(name) > -1);
+        return data.filter(item => item.name.toLowerCase().indexOf(name.toLowerCase()) > -1);
     }
 }

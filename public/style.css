@@ -4,6 +4,7 @@
 	box-sizing: border-box; 
 } 
 
+html,
 body { 
 	background: #080c13; 
 	color: #ffffff; 
@@ -162,10 +163,21 @@ body {
 	color: rgba(255,255,255,0.65); 
 }
 
+.no-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .footer {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 32px;
+	margin: 0 auto;
 	text-align: center;
+
+    position: relative;
+    bottom: 0;
 }
