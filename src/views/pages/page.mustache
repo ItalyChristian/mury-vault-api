@@ -2,19 +2,21 @@
 
 		<main class="container"> 
 			<div class="album-grid"> 
+			{{#list}}
 			<article class="album-card"> 
-				<img src="https://picsum.photos/400/400?random=2" alt="" class="album-cover" > 
+				<img src="images/{{ image }}" alt="capa do album" class="album-cover" > 
 				<div class="album-content"> 
-					<span class="album-genre"> French Pop </span> 
-					<h3> Le Village </h3> 
-					<p class="artist"> Pomme </p> 
+					<span class="album-genre">{{ type }}</span> 
+					<h3> {{ album }} </h3> 
+					<p class="artist"> {{ name }} </p> 
 					<div class="album-info"> 
-						<span>2025</span> 
-						<span>★ 9.5</span> 
+						<span>{{ year }}</span> 
+						<span>★ {{ rating }}</span> 
 					</div> 
-					<p class="favorite-track"> Faixa favorita: La Lune </p> 
+					<p class="favorite-track"> Faixa favorita: {{ favTrack }} </p> 
 				</div> 
 			</article> 
+			{{/list}}
 		</div> 
 	</main> 
 
