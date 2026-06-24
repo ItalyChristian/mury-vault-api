@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>MuryVault</title> 
+	<link rel="stylesheet" href="style.css"> 
+</head> 
+
+<body> 
+	<header class="header"> 
+		<div class="container header-content"> 
+			<a href="/" class="logo"> Mury<span>Vault</span> </a> 
+			<form class="search-form" method="GET" action="/search"> 
+				<input type="search" placeholder="Pesquisar artista, álbum ou música..." > 
+			</form> 
+		</div> 
+	</header> 
+
+	<nav class="genres"> 
+		<div class="container"> 
+			<ul> 
+				<li class="{{#menu.all}}active{{/menu.all}}"><a href="/">Todos</a></li> 
+				<li class="{{#menu.rnb}}active{{/menu.rnb}}"><a href="/rnb">R&B</a></li> 
+				<li class="{{#menu.pop}}active{{/menu.pop}}"><a href="/pop">Pop</a></li> 
+				<li class="{{#menu.rock}}active{{/menu.rock}}"><a href="/rock">Rock</a></li> 
+				<li class="{{#menu.indie}}active{{/menu.indie}}"><a href="/indie">Indie</a></li> 
+				<li class="{{#menu.folk}}active{{/menu.folk}}"><a href="/folk">Folk</a></li>
+				<li class="{{#menu.jazz}}active{{/menu.jazz}}"><a href="/jazz">Jazz</a></li> 
+			</ul> 
+        </div> 
+	</nav> 
+
+ 
+	<section class="hero"> 
+		<div class="container"> 
+		    {{#banner}}
+				<h1>{{title}}</h1> 
+				<p> Explore recomendações da comunidade, encontre novos artistas e organize seus favoritos. </p>
+			{{/banner}}
+
+			{{#bannerChild}}
+				<h3>Explorando em: {{subheading}}</h3> 
+		    {{/bannerChild}}
+		</div> 
+	</section> 
+	

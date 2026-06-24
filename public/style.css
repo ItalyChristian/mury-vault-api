@@ -73,8 +73,16 @@ body {
 	cursor: pointer; 
 } 
 
+.genres a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .genres .active { 
 	background: #00ff84; 
+} 
+
+.genres .active a { 
 	color: #080c13; 
 	font-weight: 700; 
 } 
