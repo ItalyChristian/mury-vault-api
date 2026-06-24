@@ -5,6 +5,11 @@ import { Discovery } from "../models/discoveries";
 export const search = (req: Request, res: Response) => {
   let query: string = req.query.q as string;
 
+  if(!query) {
+    res.redirect('/');
+    return;
+  }
+
   let list = Discovery.getByName(query);
 
   res.render('pages/page', {
